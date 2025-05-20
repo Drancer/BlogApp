@@ -9,4 +9,5 @@ import Foundation
 
 struct Constants {
     static let timeout: Double = 5
+    static let baseURL: String = "https://api.spaceflightnewsapi.net/v4"
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC1E84102DDC765100C43E3B /* BlogNewsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1E840F2DDC765100C43E3B /* BlogNewsServiceTests.swift */; };
 		EC5AF65B2DDC102E0050D326 /* BlogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5AF65A2DDC102E0050D326 /* BlogApp.swift */; };
 		EC5AF65D2DDC102E0050D326 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5AF65C2DDC102E0050D326 /* ContentView.swift */; };
 		EC5AF65F2DDC10310050D326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5AF65E2DDC10310050D326 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 		EC77201F2DDC2D0100013F60 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77201E2DDC2D0100013F60 /* Constants.swift */; };
 		EC7720222DDC38C200013F60 /* BlogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7720212DDC38C200013F60 /* BlogViewModel.swift */; };
 		EC7720242DDC3F1300013F60 /* BlogItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7720232DDC3F1300013F60 /* BlogItemDetailsView.swift */; };
+		EC77202A2DDC6B9900013F60 /* BlogViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7720292DDC6B9900013F60 /* BlogViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,16 +30,10 @@
 			remoteGlobalIDString = EC5AF6562DDC102E0050D326;
 			remoteInfo = BlogApp;
 		};
-		EC5AF6722DDC10310050D326 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC5AF64F2DDC102E0050D326 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC5AF6562DDC102E0050D326;
-			remoteInfo = BlogApp;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC1E840F2DDC765100C43E3B /* BlogNewsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogNewsServiceTests.swift; sourceTree = "<group>"; };
 		EC5AF6572DDC102E0050D326 /* BlogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5AF65A2DDC102E0050D326 /* BlogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogApp.swift; sourceTree = "<group>"; };
 		EC5AF65C2DDC102E0050D326 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,13 +41,13 @@
 		EC5AF6612DDC10310050D326 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC5AF6672DDC10310050D326 /* BlogAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlogAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5AF66B2DDC10310050D326 /* BlogAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogAppTests.swift; sourceTree = "<group>"; };
-		EC5AF6712DDC10310050D326 /* BlogAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlogAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7720142DDC24AE00013F60 /* BlogItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogItemView.swift; sourceTree = "<group>"; };
 		EC7720162DDC24BF00013F60 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 		EC7720192DDC295800013F60 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 		EC77201E2DDC2D0100013F60 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EC7720212DDC38C200013F60 /* BlogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewModel.swift; sourceTree = "<group>"; };
 		EC7720232DDC3F1300013F60 /* BlogItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogItemDetailsView.swift; sourceTree = "<group>"; };
+		EC7720292DDC6B9900013F60 /* BlogViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +59,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EC5AF6642DDC10310050D326 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC5AF66E2DDC10310050D326 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,7 +82,6 @@
 			children = (
 				EC5AF6572DDC102E0050D326 /* BlogApp.app */,
 				EC5AF6672DDC10310050D326 /* BlogAppTests.xctest */,
-				EC5AF6712DDC10310050D326 /* BlogAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				EC5AF66B2DDC10310050D326 /* BlogAppTests.swift */,
+				EC7720292DDC6B9900013F60 /* BlogViewModelTests.swift */,
+				EC1E840F2DDC765100C43E3B /* BlogNewsServiceTests.swift */,
 			);
 			path = BlogAppTests;
 			sourceTree = "<group>";
@@ -209,24 +199,6 @@
 			productReference = EC5AF6672DDC10310050D326 /* BlogAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EC5AF6702DDC10310050D326 /* BlogAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC5AF6812DDC10310050D326 /* Build configuration list for PBXNativeTarget "BlogAppUITests" */;
-			buildPhases = (
-				EC5AF66D2DDC10310050D326 /* Sources */,
-				EC5AF66E2DDC10310050D326 /* Frameworks */,
-				EC5AF66F2DDC10310050D326 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC5AF6732DDC10310050D326 /* PBXTargetDependency */,
-			);
-			name = BlogAppUITests;
-			productName = BlogAppUITests;
-			productReference = EC5AF6712DDC10310050D326 /* BlogAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,10 +213,6 @@
 						CreatedOnToolsVersion = 14.0;
 					};
 					EC5AF6662DDC10310050D326 = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = EC5AF6562DDC102E0050D326;
-					};
-					EC5AF6702DDC10310050D326 = {
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = EC5AF6562DDC102E0050D326;
 					};
@@ -265,7 +233,6 @@
 			targets = (
 				EC5AF6562DDC102E0050D326 /* BlogApp */,
 				EC5AF6662DDC10310050D326 /* BlogAppTests */,
-				EC5AF6702DDC10310050D326 /* BlogAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,13 +248,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EC5AF6652DDC10310050D326 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC5AF66F2DDC10310050D326 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,14 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC77202A2DDC6B9900013F60 /* BlogViewModelTests.swift in Sources */,
+				EC1E84102DDC765100C43E3B /* BlogNewsServiceTests.swift in Sources */,
 				EC5AF66C2DDC10310050D326 /* BlogAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC5AF66D2DDC10310050D326 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,11 +289,6 @@
 			isa = PBXTargetDependency;
 			target = EC5AF6562DDC102E0050D326 /* BlogApp */;
 			targetProxy = EC5AF6682DDC10310050D326 /* PBXContainerItemProxy */;
-		};
-		EC5AF6732DDC10310050D326 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EC5AF6562DDC102E0050D326 /* BlogApp */;
-			targetProxy = EC5AF6722DDC10310050D326 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -551,40 +501,6 @@
 			};
 			name = Release;
 		};
-		EC5AF6822DDC10310050D326 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tcs.BlogAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BlogApp;
-			};
-			name = Debug;
-		};
-		EC5AF6832DDC10310050D326 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tcs.BlogAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BlogApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -611,15 +527,6 @@
 			buildConfigurations = (
 				EC5AF67F2DDC10310050D326 /* Debug */,
 				EC5AF6802DDC10310050D326 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EC5AF6812DDC10310050D326 /* Build configuration list for PBXNativeTarget "BlogAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC5AF6822DDC10310050D326 /* Debug */,
-				EC5AF6832DDC10310050D326 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

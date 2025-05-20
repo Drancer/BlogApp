@@ -18,7 +18,15 @@ final class BlogAppTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testExample() async throws {
+        
+        let viewmodel = BlogViewModel()
+        await viewmodel.getBlogs()
+        
+        XCTAssertTrue(viewmodel.blogs.count != 0)
+        
+        
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.

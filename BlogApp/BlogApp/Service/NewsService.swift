@@ -38,7 +38,10 @@ protocol BlogService {
     func getBlogs() async -> Result<BlogResponse, NetworkError>
 }
 class NewsService: ErrorHandler {
-    private let baseUrl = "https://api.spaceflightnewsapi.net/v4"
+    private let baseUrl:String
+    init(baseUrl:String? = nil) {
+        self.baseUrl = baseUrl ?? Constants.baseURL
+    }
     
     private let session: URLSession = {
         let config = URLSessionConfiguration.default
