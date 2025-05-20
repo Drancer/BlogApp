@@ -16,7 +16,9 @@ struct BlogItemDetailsView: View {
                 image.resizable()
                     .aspectRatio(contentMode: .fit)
             } placeholder: {
-                Text("Loading")
+                Image("placeholder")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
             }
             Text(blog.summary)
                 .padding([.top], 10)

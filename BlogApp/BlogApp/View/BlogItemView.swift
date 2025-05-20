@@ -16,7 +16,10 @@ struct BlogItemView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width:100)
             } placeholder: {
-                Text("Loading")
+                Image("placeholder")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:100)
             }
             Text(blog.title)
             
